@@ -147,6 +147,41 @@
 
             </div>            
         </main>
-        <footer></footer>
+        <footer class="flex-row flex-space-between">
+            <div class="foot-current flex-row">
+                <img class="track-pic" src="img/sinister.jpeg" alt="">
+                <div>
+                    <h4>Sinister</h4>
+                    <p>Autore Brano</p>
+                </div>
+                <div class="icon-block">
+                    <i class="fa-regular fa-heart"></i>
+                    <br class="br-disappear">
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+            <div class="foot-player flex-col">
+                <div class="player-btn flex-row">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>     
+                    <i id="play-btn" class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="player-bar flex-row">
+                    <div>1:27</div>
+                    <div id="progress-bar">
+                    </div>
+                    <div>6:42</div>
+                </div>
+            </div>
+            <div class="foot-setting flex-row">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-low"></i>
+                <div id="audio-bar">
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
