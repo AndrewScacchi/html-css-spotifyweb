@@ -26,19 +26,8 @@ main {
     overflow-y: scroll ;
     background-color: #141922;
     color: white;
-
     padding-top: 100px;
 }
-
-/* debug */
-.test-box {
-    height: 200px;
-    width: 200px;
-    margin: 50px;
-    background-color: blue;
-    border: 1px solid black;
-}
-/* debug */
 
 /* Upper call to action oversection */
 .fixed-upper {
@@ -52,20 +41,66 @@ main {
 
 /* Navbar on the side yeah */
 .aside-navbar {
-    /* position: fixed;
-    left: 0;
-    top: 0; */
     width: 15%;
     height: calc(100vh - 100px);
     background-color: black;
     color: white;
     overflow-y: auto;
 }
-li {
-    font-size: 1em;
-    padding: 2em;
-    border: 1px solid white;
+.aside-bottom {
+    margin: auto 1em 1em 1em;
 }
+.logo {
+    height: 100px;
+    padding: 1em 3em 1em 1em; 
+}
+header li {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    color: #a3a3a3; 
+    list-style: none;
+    /* Border to algin with menu-active */
+    border: 1px solid black; 
+}
+header li:hover {
+    color: white;
+}
+.aside-menu-active{
+    color: white;
+    border-left: 2px solid greenyellow;
+}
+li i {
+    font-size: 1.25em;
+    margin-right: 0.75em;
+    width: 1em;
+}
+h4 {
+    margin: 1em 1em 0.25em;
+}
+#square-plus {
+    font-size: 3em;
+    margin-right: 0.25em;
+}
+#playlist-create {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* Aside Bottom rulez */
+#aside-user {
+    border-top: 1px solid #a3a3a3;
+    padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Footer Settings */
 footer {
@@ -76,6 +111,37 @@ footer {
     height: 100px;
     background-color: #282828;
 }
+
+/* DEBUG SECTION */
+/* Placeholder elements to be removed or integrated */
+
+.test-box {
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* UTILITY CLASSES */
