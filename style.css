@@ -115,7 +115,8 @@ main {
 }
 
 
-/* Navbar on the side yeah */
+/* SIDE HEADER */
+/* General */
 .aside-navbar {
     width: 15%;
     z-index: 11;
@@ -145,10 +146,7 @@ header li:hover {
     color: white;
     cursor: pointer;
 }
-.aside-menu-active{
-    color: white;
-    border-left: 2px solid greenyellow;
-}
+
 li i {
     font-size: 1.25em;
     margin-right: 0.75em;
@@ -157,6 +155,26 @@ li i {
 h4 {
     color: white;
     margin: 1em 0 0.25em;
+}
+.icon-xl {
+    width: 2em;
+    margin: 0 0.75em -0.5em -0.5em;
+}
+/* ids */
+#aside-menu-active{
+    color: white;
+    border-left: 2px solid greenyellow;
+}
+#user-pic {
+    background: #a3a3a3;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+}
+#user-name {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: white;
 }
 #square-plus {
     font-size: 3em;
@@ -167,14 +185,11 @@ h4 {
     flex-direction: row;
     align-items: center;
 }
-/* Aside Bottom rulez */
 #aside-user {
     border-top: 1px solid #a3a3a3;
-    /* padding: 1em; */
 }
 
-
-/* Footer Settings */
+/* FOOTER SETTINGS */
 footer {
     position: fixed;
     z-index: 10;
@@ -211,7 +226,6 @@ footer {
 .gap {
     gap:5px;
 }
-
 
 
 /* MEDIA QUERIES */
