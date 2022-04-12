@@ -57,7 +57,7 @@ main {
     background-color: rgba(0, 0, 0, 0.4);
 }
 .btn {
-    font-size: 0.6em;
+    font-size: 1em;
     padding: 1em 3em;
     border-radius: 50px;
     margin-right: 3em;
@@ -79,7 +79,8 @@ main {
     justify-content: center;
 }
 .nav-item {
-    font-size: 0.6em;
+    font-size: 1em;
+    margin: 0 0.25em;
     position: relative;
     font-weight: bold;
 }
@@ -107,9 +108,7 @@ main {
 }
 .box {
     text-align: center;
-    width: 15%;
-    min-width: 200px;
-    /* margin: 0 20px 20px 0; */
+    width: calc(16.5% - 5px);
 }
 .box img {
     width: 100%;
@@ -118,7 +117,6 @@ main {
 
 /* Navbar on the side yeah */
 .aside-navbar {
-    font-size: 0.75em;
     width: 15%;
     z-index: 11;
     height: calc(100vh - 60px);
@@ -157,7 +155,8 @@ li i {
     width: 1em;
 }
 h4 {
-    margin: 1em 1em 0.25em;
+    color: white;
+    margin: 1em 0 0.25em;
 }
 #square-plus {
     font-size: 3em;
@@ -210,40 +209,46 @@ footer {
     border-radius: 50%;
 }
 .gap {
-    gap:20px;
+    gap:5px;
 }
 
 
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1024){
-    /* .aside-navbar {
-        width: 20%;
+@media only screen and (max-width: 1024px){
+    /* box-resizing */
+    .box {
+        max-width: calc(16.5% - 5px);
     }
-    main {
-        width: 80%;
-    } */
-
+    .aside-navbar {
+        font-size: 0.75em;
+    }
+    .nav-item {
+        font-size: 0.75em;
+        margin: 0;
+    }
+    .btn {
+        font-size: 0.6em;
+    }
 }
 @media only screen and (max-width: 768px){
     .aside-navbar {
         width: 25%;
-
-    }
-    .aside-bottom li{
-        padding: 0.25em 0;
     }
     main {
         width: 75%;
     }
- 
+    /* box-resizing */
+    .box {
+        width: calc(25% - 5px);
+        min-width: 100px;
+    }
 }
 @media only screen and (max-width: 425px){
     /* global */
     .aside-navbar {
-        width: 40%;
-        
+        width: 40%; 
     }
     main {
         width: 60%;
@@ -262,10 +267,6 @@ footer {
     /* box-resizing */
     .box {
         width: calc(50% - 2.5px);
-        min-width: 100px;
-    }
-    .gap {
-        gap: 5px;
     }
     .playlist {
         justify-content: space-between;
@@ -280,16 +281,6 @@ footer {
     main {
         width: 90%;
     }
-    h2 {
-        font-size: 1em;
-    }
-    h3 {
-        font-size: 0.75em;
-    }
-    p {
-        font-size: 0.5em;
-    }
-    
     /* Icon changes */
     .logo,
     .aside-menu,
@@ -299,17 +290,5 @@ footer {
     }
     .icon-xs{
         display: block;
-    }
-    
-    /* box-resizing */
-    .box {
-        width: calc(50% - 2.5px);
-        min-width: 100px;
-    }
-    .gap {
-        gap: 5px;
-    }
-    .playlist {
-        justify-content: space-between;
     }
 }
