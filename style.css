@@ -10,14 +10,12 @@
     width: 100%;
     overflow: hidden;  
     font-family: ‘Montserrat’, sans-serif;;
-    flex-wrap: nowrap;
 }
 li {
     list-style: none;
     color: #a3a3a3; 
 }
 p {
-    /* margin: 0.1em 0; */
     color: #a3a3a3;
 }
 .icon-xs {
@@ -112,9 +110,38 @@ main {
 .box {
     text-align: center;
     width: calc(16.5% - 5px);
+    position: relative;
 }
 .box img {
     width: 100%;
+    position: relative;
+}
+/* 
+okay okay, added mouse-over play-fade effect,
+img not accept ::after, had to create a dinamic square with a svg inside
+ */
+ .box::after{
+    display: none;
+    content: "";
+    width: 100%;
+    padding-bottom: 100%;
+   
+    background: url("img/circle-play-regular.svg"),
+                rgba(0, 0, 0, 0.5);
+    background-size:  50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box:hover::after {
+    display: inline-block;
+    cursor: pointer;
+}
+.box-round:hover::after {
+    border-radius: 50%;
 }
 
 
@@ -133,6 +160,9 @@ main {
 }
 .aside-bottom {
     margin: auto 1em 1em 1em;
+}
+.aside-bottom li {
+    padding: 0.5em;
 }
 .logo {
     height: 75px;
@@ -160,11 +190,10 @@ li i {
 }
 h4 {
     color: white;
-    /* margin: 0.5em 0 0.1em; */
 }
 .icon-xl {
     width: 2em;
-    margin: 0 0.75em -0.5em -0.5em;
+    margin: 0 0.5em -0.5em -0.5em;
 }
 /* ids */
 #aside-menu-active{
@@ -178,7 +207,7 @@ h4 {
     width: 2em;
 }
 #user-name {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: bold;
     color: white;
 }
@@ -308,9 +337,6 @@ footer h4 {
 
 @media only screen and (max-width: 1024px){
     /* box-resizing */
-    .box {
-        max-width: calc(16.5% - 5px);
-    }
     .aside-navbar {
         font-size: 0.75em;
     }
@@ -415,4 +441,5 @@ footer h4 {
 }
 
 /* TEMPORARY WORKING AREA */
+
 
